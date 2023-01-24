@@ -1,11 +1,13 @@
 import React from 'react';
 
-function BookReviewSummary() {
-  return (
-    <div>
-      <p>this is a sample</p>
-    </div>
-  );
+function BookReviewSummary({ bookReviews }) {
+    return (
+        <div style={{ border: "1px solid black", marginBottom: "10px", padding: "1rem" }}>
+            <p>📙 {bookReviews.bookName}</p>
+            <p>📝 {bookReviews.author}</p>
+            <p>⭐ {bookReviews.review}</p>
+        </div>
+    );
 }
 
 export default BookReviewSummary;
